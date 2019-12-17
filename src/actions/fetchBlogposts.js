@@ -10,3 +10,5 @@ export function fetchBlogposts(){
         }))
     }
 }
+
+//  WE call dispatch from here because thunk let us do so.
