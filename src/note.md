@@ -45,3 +45,7 @@ Hint: You can Use the same style of how you set your Jet Final Project app back-
  How to run the project.
 Makes sure both servers are running as this are separates APP that are not connected at all… 
  
+
+
+Questions I have:,
+ Do I need a serilizer for this project. 
