@@ -1,6 +1,6 @@
 
 export function fetchBlogposts(){
-    return (disptach) => {
+    return (dispatch) => {
         fetch('http://localhost:3000/blog_posts')
             .then(resp => resp.json())
             .then(blog_posts => dispatch({

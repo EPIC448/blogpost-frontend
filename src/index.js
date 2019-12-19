@@ -17,7 +17,7 @@ let store = createStore(blogpostReducer, composeEnhancer(applyMiddleware(thunk))
 // let store = createStore( composeEnhancer(applyMiddleware(thunk)))
 
 ReactDOM.render(
-    < Provider store={store} >
+    <Provider store={store}>
      <Router>
        <App />
        </Router>

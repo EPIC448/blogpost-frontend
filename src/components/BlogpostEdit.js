@@ -33,7 +33,8 @@ class BlogpostEdit extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        
+        <form onSubmit={this.handlesubmit}>
           <label>BlogPost Title: </label>
           <input type='text' placeholder='Title' value={this.state.title} title="title" onChange={this.handleChange}/><br/>
           
@@ -49,6 +50,6 @@ class BlogpostEdit extends React.Component {
 
 
 BlogpostEdit.defaultProps = {
-    accounts: {}
+    blogpost: {}
 }
 export default connect(null,{editBlogpost})(BlogpostEdit)

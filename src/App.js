@@ -1,8 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
-import {connect} from 'react-redux'
-// import BlogpostContainer from './containers/BlogpostsContainer'
+import BlogpostsContainer from './containers/BlogpostsContainer'
 
 class App extends React.Component {
 
@@ -11,7 +10,8 @@ class App extends React.Component {
     return (
       <div className="App">
         {/* <BlogpostsContainer> */}
-        App
+        {/* App... This is the App.js */}
+        <BlogpostsContainer/>
         
       </div>
     );

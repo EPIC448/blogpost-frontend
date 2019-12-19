@@ -19,7 +19,7 @@ Use redux Thunks.
 
 Your Rails API should handle the data persistence. You should be using fetch()   {Refering to the React/redux fetch} within your actions to GET and POST data from your API - do not use jQuery method.
 
-Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it!..
+
 
  Suggestion:
  Make a new Branch on the project when do the front … part. 
@@ -49,3 +49,18 @@ Makes sure both servers are running as this are separates APP that are not conne
 
 Questions I have:,
  Do I need a serilizer for this project. 
+>>>>>>>>>>>>>>>>>>>>>..
+Front-End parts
+
+Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it!.. 
+
+You Need to React-bootstrap if you are to use REACT BOOTSTRIP..  BUT it not madantory. you can use your own costumizered css. -->
+
+https://colorlib.com/wp/template/article/
+
+ https://colorlib.com/wp/template/original/
+
+
+
+  Review from class
+  > all my compenents are complete and working together.

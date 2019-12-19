@@ -1,6 +1,6 @@
 
 
-export const editBlog = (data) => {
+export const editBlogpost = (data) => {
     return (dispatch) => {
         fetch(`http://localhost:3000/blog_posts/${data.id}`, {
             headers: {
