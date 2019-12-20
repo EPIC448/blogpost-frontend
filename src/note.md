@@ -48,7 +48,7 @@ Makes sure both servers are running as this are separates APP that are not conne
 
 
 Questions I have:,
- Do I need a serilizer for this project. 
+ Do I need a serilizer for this project. =>. NO it not required.
 >>>>>>>>>>>>>>>>>>>>>..
 Front-End parts
 
