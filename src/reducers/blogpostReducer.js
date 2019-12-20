@@ -1,8 +1,10 @@
 
-export default function blogpostReducer(state = { accounts: [] }, action) {
+export default function blogpostReducer(state = { blog_posts: [] }, action) {
 //     Built Video 4
     switch (action.type) {
         case 'FETCH_BLOGPOSTS':
+            console.log(action.payload)
+
             return { blog_posts: action.payload }
         
         case 'ADD_BLOGPOST':

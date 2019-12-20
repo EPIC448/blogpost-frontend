@@ -1,30 +1,26 @@
 import React from 'react';
 // import logo from './logo.svg';
-// import './App.css';
+import {connect} from 'react-redux'
+import {fetchBlogposts} from './actions/fetchBlogposts'
 import BlogpostsContainer from './containers/BlogpostsContainer'
 
 class App extends React.Component {
+  
   componentDidMount() {
-    // fetch('http://localhost:3000/blog_posts')
-    //   .then(resp => resp.json())
-    //   .then(blog_posts => dispatch({
-    //     type: 'FETCH_BLOGPOSTS',
-    //     payload: blog_posts
-      
-    //   }))
-    
-
-
-
-
-    fetch('http://localhost:3000/blog_posts/', {
-      method: 'GET'
-    })
-    
-      .then(response => response.json())
-    .then(data => console.log(data))
-    
+      this.props.fetchBlogposts()
   }
+
+
+  
+
+  //   fetch('http://localhost:3000/blog_posts/', {
+  //     method: 'GET'
+  //   })
+    
+  //     .then(response => response.json())
+  //   .then(data => console.log(data))
+    
+  // }
 
 
   render() {
@@ -43,4 +39,5 @@ class App extends React.Component {
  
 }
 
-export default App;
+// export default App;
+export default connect(null, {fetchBlogposts})(App)
