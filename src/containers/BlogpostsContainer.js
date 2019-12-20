@@ -8,7 +8,7 @@ import {fetchBlogposts} from '../actions/fetchBlogposts'
 import Blogposts from '../components/Blogposts'
 import Blogpost from '../components/Blogposts'
 import BlogpostInput from '../components/BlogpostInput'
-// import NavBar from '../components/NavBar'
+import NavBar from '../components/NavBar'
 
 class BlogpostsContainer extends React.Component {
 
@@ -19,7 +19,7 @@ class BlogpostsContainer extends React.Component {
         render() {
                 return (
                         <div>
-                        {/* <NavBar/> */}
+                        <NavBar/>
                                 <Switch>
                                         <Route path = '/blog_posts/new' component={BlogpostInput}/>
                                         <Route path='/blog_posts/:id' render={(routerProps) => <Blogpost {...routerProps} blogposts={this.props.blogposts}/>}/>
@@ -35,7 +35,7 @@ class BlogpostsContainer extends React.Component {
 
 const mapStateToProps = state => {
         return {
-                blogposts: state.blogposts
+                blogposts: state.blog_posts
         }
 }
 

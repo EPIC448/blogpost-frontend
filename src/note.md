@@ -8,14 +8,15 @@
  <!-- Requiments. -->
 
 Requirements  React/ Redux Project.
- 	. There should be 2 container components (Two Classes)
+
+. There should be 2 container components (Two Classes)
 
 There should be 5 stateless components (components that are functions… There simple Render and display data)
 
-There should be 3 routes (Usually in the App Components./  Different form Rails Routers..And we are using React Routers. )
+√There should be 3 routes (Usually in the App Components./  Different form Rails Routers..And we are using React Routers. )
 
 Redux  Must be use  in the front end.  (Use Redux Store  to keep track of all the important  data. )
-Use redux Thunks.
+√ Use redux Thunks.
 
 Your Rails API should handle the data persistence. You should be using fetch()   {Refering to the React/redux fetch} within your actions to GET and POST data from your API - do not use jQuery method.
 
@@ -62,5 +63,9 @@ https://colorlib.com/wp/template/article/
 
 
 
-  Review from class
-  > all my compenents are complete and working together.
+  What we need to work on 
+ . The blog containers etc  are not showing on the page. (app.js)\
+ 
+ Inside the components/Blogposts
+ . // Now, we click on the presented Blog post. We want it to just show that only blog post.   
+  Look at your NavBars. and possible BlogPost.
