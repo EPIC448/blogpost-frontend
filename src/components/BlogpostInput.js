@@ -12,16 +12,16 @@ class BlogpostInput extends React.Component {
     handleChange = (event) => {
         
         this.setState({
-            [event.target.title]: event.target.value
+            [event.target.name]: event.target.value,
         })
     }
 
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.addAccount(this.state)
+        this.props.addBlogpost(this.state)
         this.setState({
-            name: '',
-            balance: ''
+            title: '',
+            content: ''
         })
     }
 
@@ -30,11 +30,12 @@ class BlogpostInput extends React.Component {
             <div>
         <form onSubmit={this.handleSubmit}>
           <label>BlogPost Title: </label>
-          <input type='text' placeholder='Title' value={this.state.title} title="title" onChange={this.handleChange}/><br/>
-         
-                    <label>BlogPost Title:  </label>
+          <input type='text' placeholder='Title' value={this.state.title} name="title" onChange={this.handleChange}/><br/>
+          <br></br>
+                    <label>BlogPost Content:  </label>
           <input type='text' placeholder='Content' value={this.state.content} name="content" onChange={this.handleChange}/><br/>
-          <input type="submit"/>
+          <br></br>
+                    <input type="submit" />
         </form>
             </div>
             
