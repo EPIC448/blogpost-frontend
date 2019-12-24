@@ -6,7 +6,7 @@ const Blogpost = (props) => {
     console.log(props)
     
     let blogpost = props.blogposts.filter(blogpost => blogpost.id == props.match.params.id)[0]
-    debugger
+    
   
 return (
            

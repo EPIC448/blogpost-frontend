@@ -64,8 +64,5 @@ https://colorlib.com/wp/template/article/
 
 
   What we need to work on 
- . The blog containers etc  are not showing on the page. (app.js)\
- 
- Inside the components/Blogposts
- . // Now, we click on the presented Blog post. We want it to just show that only blog post.   
-  Look at your NavBars. and possible BlogPost.
+ .We need the ability to edit what blogpost we have already in the state. 
+ Debugger will help with this.

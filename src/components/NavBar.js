@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 const NavBar = (props) => {
-    console.log(props)
+    
     return (
         <div>
             <Link to='/blog_posts' style={{ paddingRight: '10px' }}> Blogposts </Link>
