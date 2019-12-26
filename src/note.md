@@ -66,3 +66,8 @@ https://colorlib.com/wp/template/article/
   What we need to work on 
  .We need the ability to edit what blogpost we have already in the state. 
  Debugger will help with this.
+
+ Start lookng in React Bootstrip . Or better yet do your own costimze CSS. Files. 
+
+
+ Reactbootstrap was added. 

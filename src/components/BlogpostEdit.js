@@ -21,7 +21,7 @@ class BlogpostEdit extends React.Component {
 
   handlesubmit = (event) => {
       
-      event.preventdefault()
+      event.preventDefault()
       debugger
         let newblogpost = { ...this.state, id: this.props.blogpost.id }
         this.props.editBlogpost(newblogpost)
@@ -37,10 +37,10 @@ class BlogpostEdit extends React.Component {
       <div>
         
         <form onSubmit={this.handlesubmit}>
-          <label>BlogPost Title: </label>
+          <label>Edit BlogPost Title: </label>
           <input type='text' placeholder='Title' value={this.state.title} name="title" onChange={this.handleChange}/><br/>
           
-                <label>BlogPost Content: </label>
+                <label>Edit BlogPost Content: </label>
           <input type='text' placeholder='Content' value={this.state.content} name="content" onChange={this.handleChange}/><br/>
           <input type="submit"/>
         </form>
