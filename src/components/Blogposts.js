@@ -7,7 +7,7 @@ const Blogposts = (props) => {
   //  props.blogpost.... is coming in as Undfined...
   //   Look at your pay_load / what your have in your state
   return (
-    <div>
+    <div class="nested-links">
       {props.blogposts.map(blogpost =>
         <li key={blogpost.id}>
 
