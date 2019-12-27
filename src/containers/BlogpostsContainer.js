@@ -9,7 +9,6 @@ import Blogposts from '../components/Blogposts'
 import Blogpost from '../components/Blogpost'
 import BlogpostInput from '../components/BlogpostInput'
 import NavBar from '../components/NavBar'
-import { Button } from 'react-bootstrap';
 
 
 class BlogpostsContainer extends React.Component {
