@@ -6,7 +6,7 @@ JavaScript
 Resources
 header {
   position: relative;
-  background-color: whitesmoke;
+  background-color: white;
   height: 75vh;
   min-height: 25rem;
   width: 100%;
@@ -39,7 +39,7 @@ header .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color:transparent;
   opacity: 0.5;
   z-index: 1;
 }
