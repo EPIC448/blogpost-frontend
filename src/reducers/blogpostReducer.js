@@ -13,7 +13,7 @@ export default function blogpostReducer(state = { blog_posts: [] }, action) {
         case 'EDIT_BLOGPOST':
             
             let blog_postEdit = state.blog_posts.map(blog_post => {
-                debugger
+                
                 if (blog_post.id === action.payload.id) {
                     return action.payload
                 } else {

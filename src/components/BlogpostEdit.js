@@ -24,7 +24,7 @@ class BlogpostEdit extends React.Component {
   handlesubmit = (event) => {
       
       event.preventDefault()
-      debugger
+      
         let newblogpost = { ...this.state, id: this.props.blogpost.id }
         this.props.editBlogpost(newblogpost)
         this.setState({

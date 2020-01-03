@@ -1,4 +1,5 @@
- Resources to Use.
+ Resources to Use.\
+ <!--  All requirment met. -->
  https://github.com/Awilmerding1/expenses-frontend
 
  https://github.com/Awilmerding1/expenses-backend
@@ -73,3 +74,12 @@ https://colorlib.com/wp/template/article/
  Reactbootstrap was added. 
    Sources was very helpfull. Code snippets.
  https://startbootstrap.com/snippets/video-header/
+
+
+
+<!--  redux=>  state Used in Muliple place.....  
+    redux goes upon act.....
+ -->
+
+
+ >>.> Make sure to Practice working in React  by it self... without redux.<<>>
