@@ -38,6 +38,7 @@ class BlogpostsContainer extends React.Component {
 const mapStateToProps = state => {
         return {
                 blogposts: state.blog_posts
+                // change ot camerl case.
         }
 }
 

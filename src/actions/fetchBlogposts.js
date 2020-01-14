@@ -7,8 +7,13 @@ export function fetchBlogposts(){
                 type: 'FETCH_BLOGPOSTS',
                 payload: blog_posts
                 
-        }))
+            }))
+        console.log("Fetch is not working")
     }
 }
 
 //  WE call dispatch from here because thunk let us do so.
+
+
+
+// .catch React 

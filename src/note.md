@@ -83,3 +83,85 @@ https://colorlib.com/wp/template/article/
 
 
  >>.> Make sure to Practice working in React  by it self... without redux.<<>>
+ https://reacttraining.com/react-router/web/api/NavLink/activestyle-object
+
+
+
+  Where I want to Focus On for Assessment. 
+
+  Note… To focus in React… 
+
+react
+ local state and why is it important.  a 
+
+ >>> Implementing local state. If you dont want use props. 
+
+ class MyComp extends React.Component {
+ 
+  // we use the constructor to set the INITIAL STATE
+  constructor() {
+    super()
+    this.state = {
+      count: 0
+    }
+  }
+ 
+  // our increment method makes use of the 'setState' method, which is what we use to alter state
+  increment = () => {
+    const newCount = this.state.count + 1
+    this.setState({
+      count: newCount
+    })
+  }
+ 
+  render() {
+    return (
+      <div onClick={this.increment}>
+        {this.state.count}
+      </div>
+    )
+  }
+}
+
+
+Event Pooling..
+ Event pooling means that whenever an event fires, its event data (an object) is sent to the callback. The object is then immediately cleaned up for later use. This is what we mean by 'pooling': the event object is in effect being sent back to the pool for use in a later event. It's something that trips up a lot of people, and you might have run into it yourself when inspecting SyntheticEvent in the browser.
+
+
+We can update state... with 
+ ...this.state.addressINfor, city: 'New York city)
+
+ or
+
+ this.setState({
+  addressInfo: Object.assign({}, this.state.addressInfo, {
+    city: 'New York City'
+  })
+});
+
+
+State Vs Props
+ It's important to note the difference between changes in state and changes in props. Changes in state and/or props will both trigger a re-render of our React component. However, changes in state can only happen internally due to components changing their own state. Thus, a component can trigger changes in its own state.
+
+
+A component cannot change its props. Changes in props can only happen externally, meaning the parent or grandparent component changes the values it passing down to its children.
+   The Chapter on Forms... really covers this. 
+
+>>>>>>
+All React goes throw Creation , updating , deleting. 
+Note:  lifecycle hooks or lifecycle methods. includes Mounting, Updating,  unmounting. 
+ All compenets are JS classes
+ <<<>>>
+component 
+Changing between class component and function components {know how to turn to a class or a funtion compents... },
+making interctive components. 
+
+Live coding
+ Pure react , local state, 
+conditions rendering, actions, event listener and handles. etc. 
+
+redux
+Global state 
+How does promises work. And how does information pass around
+thunk
+
