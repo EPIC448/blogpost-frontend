@@ -11,8 +11,8 @@ export const addBlogpost = (data) => {
         })
             .then(response => response.json())
             .then(blogpost => dispatch({ type: 'ADD_BLOGPOST', payload: blogpost }))
-            
-            console.log("Edit is not working")
+
+            .catch(error => console.log(error) )
     }
   
   }

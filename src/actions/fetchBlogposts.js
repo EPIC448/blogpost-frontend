@@ -8,7 +8,7 @@ export function fetchBlogposts(){
                 payload: blog_posts
                 
             }))
-        console.log("Fetch is not working")
+            .catch(error => console.log(error) )
     }
 }
 
