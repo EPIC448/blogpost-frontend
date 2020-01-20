@@ -5,6 +5,9 @@
  https://github.com/Awilmerding1/expenses-backend
 
 
+Features. TO Up votes. 
+https://codereview.stackexchange.com/questions/133669/upvote-downvote-toggle
+https://learn.co/tracks/full-stack-web-development-v8/module-17-redux/section-3-react-redux-continued/redux-forms-codealong
 
  <!-- Requiments. -->
 

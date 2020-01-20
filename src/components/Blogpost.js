@@ -3,10 +3,9 @@ import React from 'react'
 import BlogpostEdit from './BlogpostEdit'
 
 const Blogpost = (props) => {
-    console.log(props)
     
     let blogpost = props.blogposts.filter(blogpost => blogpost.id == props.match.params.id)[0]
-    
+
   
 return (
            
@@ -15,13 +14,18 @@ return (
     <h2>
       {blogpost ? blogpost.title : null}, {blogpost ? blogpost.content : null}
     </h2>
+
+
         
-                <h4>Edit Blogpost</h4>
+    <h4>Edit Blogpost</h4>
+    
                 
     <BlogpostEdit blogpost={blogpost}/>
   </div>
+  
    )
 
+  
         
 }
 

@@ -13,7 +13,6 @@ export default function blogpostReducer(state = { blog_posts: [] }, action) {
 
         case 'EDIT_BLOGPOST':
             
-            //  Change blog_posts to blogPosts line 17#
             let blog_postEdit = state.blog_posts.map(blog_post => {
                 
                 if (blog_post.id === action.payload.id) {
@@ -24,7 +23,9 @@ export default function blogpostReducer(state = { blog_posts: [] }, action) {
             })
 
             return { ...state, blog_posts: blog_postEdit }
-        //  Change blog_posts to blogPosts  line 26#
+        
+
+            
         default:
             return state
         
