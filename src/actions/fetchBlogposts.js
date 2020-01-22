@@ -7,8 +7,13 @@ export function fetchBlogposts(){
                 type: 'FETCH_BLOGPOSTS',
                 payload: blog_posts
                 
-        }))
+            }))
+            .catch(error => console.log(error) )
     }
 }
 
 //  WE call dispatch from here because thunk let us do so.
+
+
+
+// .catch React 

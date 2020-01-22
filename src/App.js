@@ -4,7 +4,6 @@ import {connect} from 'react-redux'
 import {fetchBlogposts} from './actions/fetchBlogposts'
 import BlogpostsContainer from './containers/BlogpostsContainer'
 // import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Button } from 'react-bootstrap';
 
 
 
@@ -23,7 +22,10 @@ class App extends React.Component {
         <p>This is the App page</p>
         {/* <BlogpostsContainer> */}
         {/* App... This is the App.js */}
-        <BlogpostsContainer/>
+
+        
+        <BlogpostsContainer />
+        
         
       </div>
     );

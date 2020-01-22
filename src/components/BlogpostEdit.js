@@ -4,12 +4,15 @@ import {editBlogpost} from '../actions/editBlogpost'
 // import { throwStatement } from '@babel/types'
 
 
+
+
 class BlogpostEdit extends React.Component {
 
 
     state = {
         title: '',
-        content: ''
+      content: '',
+        vote: 0
     }
 
     handleChange = (event) => {
@@ -22,7 +25,7 @@ class BlogpostEdit extends React.Component {
   handlesubmit = (event) => {
       
       event.preventDefault()
-      debugger
+      
         let newblogpost = { ...this.state, id: this.props.blogpost.id }
         this.props.editBlogpost(newblogpost)
         this.setState({
@@ -30,7 +33,29 @@ class BlogpostEdit extends React.Component {
             content: ''
 
         })
-    }
+  }
+  
+  
+      
+  handleUpvoteClicked = event => {
+    let newVote = this.state.vote + 1
+
+    this.setState({
+        vote: newVote
+      })
+    
+    
+  };
+  downVoteClicked = event => {
+    let newVote = this.state.vote - 1
+
+    this.setState({
+        vote: newVote
+      })
+    
+    
+  };
+
 
   render() {
     return (
@@ -38,12 +63,22 @@ class BlogpostEdit extends React.Component {
         
         <form onSubmit={this.handlesubmit}>
           <label>Edit BlogPost Title: </label>
+
           <input type='text' placeholder='Title' value={this.state.title} name="title" onChange={this.handleChange}/><br/>
           
                 <label>Edit BlogPost Content: </label>
           <input type='text' placeholder='Content' value={this.state.content} name="content" onChange={this.handleChange}/><br/>
-          <input type="submit"/>
+          <input type="submit" />
+          
+          <br>
+          </br>
+
         </form>
+
+        <button onClick={this.handleUpvoteClicked}> <span>Up👍🏿Vote</span></button>
+        {this.state.vote}
+
+        <button onClick={this.downVoteClicked}> <span> Down👎🏻vote</span></button>
       </div>
     )
   }

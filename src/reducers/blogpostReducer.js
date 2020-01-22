@@ -1,9 +1,10 @@
 
 export default function blogpostReducer(state = { blog_posts: [] }, action) {
+        //  Change blog_posts to blogPosts
 //     Built Video 4
     switch (action.type) {
         case 'FETCH_BLOGPOSTS':
-            console.log(action.payload)
+            // console.log(action.payload)
 
             return { blog_posts: action.payload }
         
@@ -13,7 +14,7 @@ export default function blogpostReducer(state = { blog_posts: [] }, action) {
         case 'EDIT_BLOGPOST':
             
             let blog_postEdit = state.blog_posts.map(blog_post => {
-                debugger
+                
                 if (blog_post.id === action.payload.id) {
                     return action.payload
                 } else {
@@ -22,6 +23,9 @@ export default function blogpostReducer(state = { blog_posts: [] }, action) {
             })
 
             return { ...state, blog_posts: blog_postEdit }
+        
+
+            
         default:
             return state
         

@@ -9,7 +9,6 @@ import Blogposts from '../components/Blogposts'
 import Blogpost from '../components/Blogpost'
 import BlogpostInput from '../components/BlogpostInput'
 import NavBar from '../components/NavBar'
-import { Button } from 'react-bootstrap';
 
 
 class BlogpostsContainer extends React.Component {
@@ -39,8 +38,9 @@ class BlogpostsContainer extends React.Component {
 const mapStateToProps = state => {
         return {
                 blogposts: state.blog_posts
+                // change ot camerl case.
         }
 }
 
-
+// 
 export default connect(mapStateToProps, {fetchBlogposts})(BlogpostsContainer)

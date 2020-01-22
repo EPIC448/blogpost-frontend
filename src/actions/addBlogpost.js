@@ -10,7 +10,9 @@ export const addBlogpost = (data) => {
             body: JSON.stringify(data)
         })
             .then(response => response.json())
-            .then(blogpost => dispatch({type: 'ADD_BLOGPOST', payload: blogpost}))
+            .then(blogpost => dispatch({ type: 'ADD_BLOGPOST', payload: blogpost }))
+
+            .catch(error => console.log(error) )
     }
   
   }

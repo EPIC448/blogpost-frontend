@@ -11,6 +11,9 @@ export const editBlogpost = (data) => {
             body: JSON.stringify(data)
         })
             .then(response => response.json())
-        .then(blogpost => dispatch({type: 'EDIT_BLOGPOST', payload: blogpost}))
+            .then(blogpost => dispatch({ type: 'EDIT_BLOGPOST', payload: blogpost }))
+            
+            .catch(error => console.log(error) )
     }
+   
 }
