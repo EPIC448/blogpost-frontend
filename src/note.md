@@ -43,7 +43,6 @@ TOOLS TO USING
 all the way through (the end of )  HERE WE GO IN  in the article. 
 
 
-Hint: You can Use the same style of how you set your Jet Final Project app back-end  where it is rendering it own API…. 
  Then use the same style in here. 
 
 
@@ -68,10 +67,10 @@ https://colorlib.com/wp/template/article/
 
 
   What we need to work on 
- .We need the ability to edit what blogpost we have already in the state. 
+ We need the ability to edit what blogpost we have already in the state. 
  Debugger will help with this.
 
- Start lookng in React Bootstrip . Or better yet do your own costimze CSS. Files. 
+ vStart lookng in React Bootstrip . Or better yet do your own costimze CSS. Files. 
 
 
  Reactbootstrap was added. 
@@ -94,7 +93,7 @@ https://colorlib.com/wp/template/article/
 
   Note… To focus in React… 
 
-react
+React LOcal start. Used this for the Vote feature
  local state and why is it important.  a 
 
  >>> Implementing local state. If you dont want use props. 
@@ -109,27 +108,13 @@ react
     }
   }
  
-  // our increment method makes use of the 'setState' method, which is what we use to alter state
-  increment = () => {
-    const newCount = this.state.count + 1
-    this.setState({
-      count: newCount
-    })
-  }
- 
-  render() {
-    return (
-      <div onClick={this.increment}>
-        {this.state.count}
-      </div>
-    )
-  }
-}
 
 
 Event Pooling..
- Event pooling means that whenever an event fires, its event data (an object) is sent to the callback. The object is then immediately cleaned up for later use. This is what we mean by 'pooling': the event object is in effect being sent back to the pool for use in a later event. It's something that trips up a lot of people, and you might have run into it yourself when inspecting SyntheticEvent in the browser.
-
+ Event pooling means : 
+ event fires, =>  event data (an object)  sent to callback. 
+ The object is  cleaned up for later use. 
+ Thus 'pooling': the event object is in effect being sent back to the pool for use in a later event. 
 
 We can update state... with 
  ...this.state.addressINfor, city: 'New York city)
@@ -168,3 +153,50 @@ Global state
 How does promises work. And how does information pass around
 thunk
 
+>>>>>>>>>>>>>>>>
+ couple of areas to brush uo on for react. 
+
+ Note… To focus in React… 
+react
+ local state and why is it important. 
+component 
+Changing between class component and function components,
+making interctive components. 
+
+Live coding
+ √ Pure react , local state, 
+conditions rendering, actions,
+√event listener and √handles. etc. 
+
+redux
+Global state 
+> Reduex store can hold a ots of states, 
+How does promises work. And how does information pass around
+
+thunk
+  Thunk handles asynchronous calls when working with Redux - Think for a moment: we have Redux handling all our app's data. So far, it's all be hard-coded data, i.e. data that we set ourselves. It would be great if could start getting data from other sources.
+ a Promise is retured. A Promise object is an object that represents some value that will be available later. We can access the data when the promise "resolves" and becomes available by chaining a then() function onto our fetch() call.
+
+  Reasonn why Thunk is important. 
+     Thunk allows us to return a function inside of our action creator. Normally, our action creator returns a plain JavaScript object
+      Second, that function inside of Thunk receives the store's dispatch function as its argument. With that, we can dispatch multiple actions from inside that returned function.
+ As a result we end up with something like this. 
+  
+  export function fetchAstronauts() {
+  return (dispatch) => {
+    dispatch({ type: 'START_ADDING_ASTRONAUTS_REQUEST' });
+    fetch('http://api.open-notify.org/astros.json')
+      .then(response => response.json())
+      .then(astronauts => dispatch({ type: 'ADD_ASTRONAUTS', astronauts }));
+  };
+  <!-- Notice that we can  Dispact from inside the  returned function in here as well.  
+  <!-- we first dispatch an action to state that we are about to make a request to our API. Then we make the request. We do not hit our then() function until the response is received, this means that we are not dispatching our action of type 'ADD_ASTRONAUTS' until we receive our data. Thus, we are able to send along that data. -->
+}
+
+When to use redux Store 
+ use local state and parent props first.
+  If we end up constantly passing down tons of props,
+  we should consider connecting the component in question with a Redux store.
+
+  Benefite of Local state.
+   It is bound to the components it is in.
