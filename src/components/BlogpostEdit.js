@@ -36,26 +36,6 @@ class BlogpostEdit extends React.Component {
   }
   
   
-      
-  // handleUpvoteClicked = event => {
-  //   let newVote = this.state.vote + 1
-
-  //   this.setState({
-  //       vote: newVote
-  //     })
-    
-    
-  // };
-  // downVoteClicked = event => {
-  //   let newVote = this.state.vote - 1
-
-  //   this.setState({
-  //       vote: newVote
-  //     })
-    
-    
-  // };
-
 
   render() {
     return (
@@ -75,10 +55,7 @@ class BlogpostEdit extends React.Component {
 
         </form>
 
-        {/* <button onClick={this.handleUpvoteClicked}> <span>Up👍🏿Vote</span></button>
-        {this.state.vote}
-
-        <button onClick={this.downVoteClicked}> <span> Down👎🏻vote</span></button> */}
+       
       </div>
     )
   }

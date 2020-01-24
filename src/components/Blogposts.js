@@ -2,10 +2,8 @@ import React, { Fragment } from 'react'
 import { Route, Link } from 'react-router-dom'
 import RenderVote from './RenderVote'
 
-// import { ReactReduxContext } from 'react-redux'
 import {connect} from 'react-redux'
 
-// const Blogposts = (props) => {
 
 class Blogposts extends React.Component{
     

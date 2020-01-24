@@ -153,6 +153,7 @@ Global state
 How does promises work. And how does information pass around
 thunk
 
+<<<<<<< HEAD
 >>>>>>>>>>>>>>>>
  couple of areas to brush uo on for react. 
 
@@ -200,3 +201,4 @@ When to use redux Store
 
   Benefite of Local state.
    It is bound to the components it is in.
+=======
