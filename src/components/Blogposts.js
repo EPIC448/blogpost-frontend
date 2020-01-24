@@ -17,51 +17,6 @@ class Blogposts extends React.Component{
   }
   
 
-      
-//   handleUpvoteClicked = event => {
-
-    
-    
-
-//     let newVote = this.state.vote + 1
-//     debugger
-
-//     // This give me just the IDs 
-//        let  getVote  = this.props.blogposts.forEach(element => console.log(element.id));  
-//     // => 1
-//     // 2
-//     // VM1875:2 3
-//     // VM1875:2 4
-//     // VM1875:2 5
-//     // VM1875:2 6
-
-//     // function getFreeVote(getVote) {
-//     //   return (getVote === element.id ? vote: newVote : null);
-//     // }
-    
-//     this.setState({
-    
-      
-
-//        vote: newVote 
-//     })
-    
-    
-//   };
-  
-//   downVoteClicked = event => {
-
-//       // blogpost.find(blogpost => this.props.blogpost.id === id)
-//     let newVote = this.state.vote - 1
-// //  debugger
-//     this.setState({
-      
-//         vote: newVote
-//       })
-    
-    
-//   };
-
   
   render(){
   return (
@@ -77,10 +32,7 @@ class Blogposts extends React.Component{
             
         <RenderVote/>
 
-          {/* <button onClick={this.handleUpvoteClicked}> <span>Up👍🏿Vote</span></button>
-        {this.state.vote}
-
-        <button onClick={this.downVoteClicked}> <span> Down👎🏻vote</span></button> */}
+          
           
         </li>)}
     </div>
