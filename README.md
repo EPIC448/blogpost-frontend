@@ -15,6 +15,48 @@ Installation
     In your Shell or Local terminal, cd to the approprate file that you just cloned and run 
      Npm start.
 
+     Dependencies you may need
+
+     {
+  "name": "blogpost-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
+
 Usage Example
    Instagram, Twitter, facebook. 
     The project shows a list of comments and The user has the choice to vote on that comments, Edit the comment, or create a New comment.
@@ -28,11 +70,10 @@ npm start   => to start up this app, as this is the front-end section of this pr
 
 
 
-
 ### `yarn start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
