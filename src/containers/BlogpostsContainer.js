@@ -24,7 +24,7 @@ class BlogpostsContainer extends React.Component {
                                 <Switch>
 
                                         <Route exact path = '/blog_posts/new' component={BlogpostInput}/>
-                                        <Route  path='/blog_posts/:id' render={(routerProps) => <Blogpost {...routerProps} blogposts={this.props.blogposts} />} />
+                                        <Route exact path='/blog_posts/:id' render={(routerProps) => <Blogpost {...routerProps} blogposts={this.props.blogposts} />} />
                                         <Route exact path='/blog_posts' render={(routerProps) => <Blogposts {...routerProps} blogposts={this.props.blogposts}/>}/>
 
                                         

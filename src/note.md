@@ -176,7 +176,7 @@ How does promises work. And how does information pass around
 
 thunk
   Thunk handles asynchronous calls when working with Redux - Think for a moment: we have Redux handling all our app's data. So far, it's all be hard-coded data, i.e. data that we set ourselves. It would be great if could start getting data from other sources.
- a Promise is retured. A Promise object is an object that represents some value that will be available later. We can access the data when the promise "resolves" and becomes available by chaining a then() function onto our fetch() call.
+ a Promise is retured. A Promise object is an object that represents some value that will be available later. We can access the data when the promise "resolves" and becomes available by chaining a  .then() function onto our fetch() call.
 
   Reasonn why Thunk is important. 
      Thunk allows us to return a function inside of our action creator. Normally, our action creator returns a plain JavaScript object
