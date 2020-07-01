@@ -1,22 +1,22 @@
 
 
-Development setup
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
 
-Installation
-   OSX & Linux.
-   In your Github reposiotry. 
-    Fork the project into your current repository 
-     Then clone is down into your local machine 
+**Project Title**
 
-    
-          Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-backend   before running npm start for this project.
+**Motivation**
 
-    In your Shell or Local terminal, cd to the approprate file that you just cloned and run 
-     Npm start.
 
-     Dependencies you may need
 
+
+**ScreenShots**
+
+**Code_Sample**
+
+**Tech/Framework used**
+
+   *System dependencies*
+
+```
      {
   "name": "blogpost-frontend",
   "version": "0.1.0",
@@ -55,8 +55,22 @@ Installation
     ]
   }
 }
+ ```
 
+**Installation**
+Installation
+   OSX & Linux.
+  In your Github reposiotry. 
+  Fork the project into your current repository 
+  Then clone is down into your local machine 
 
+    
+          *Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-backend   before running npm start for this project.*
+
+    In your Shell or Local terminal, cd to the approprate file that you just cloned and run or type  
+       > Npm start.
+
+     
 Usage Example
    Instagram, Twitter, facebook. 
     The project shows a list of comments and The user has the choice to vote on that comments, Edit the comment, or create a New comment.
@@ -70,9 +84,10 @@ npm start   => to start up this app, as this is the front-end section of this pr
 
 
 
-### `yarn start`
+**yarn start**
 
 Runs the app in the development mode.<br />
+
 Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
 The page will reload if you make edits.<br />
@@ -88,7 +103,7 @@ https://github.com/epic448/github-link
 
 
 
-## Learn More
+**Learn More**
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
