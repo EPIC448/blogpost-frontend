@@ -13,8 +13,81 @@
     Simply put, what app do I wish I had when I use web application such as reddit or twitter.
     
      *That answer birth this project.* 
+     
 
 **Code_Sample**
+
+   *fetch from the API*
+
+```
+    export function fetchBlogposts(){
+    return (dispatch) => {
+        fetch('http://localhost:3000/blog_posts')
+            .then(resp => resp.json())
+            .then(blog_posts => dispatch({
+                type: 'FETCH_BLOGPOSTS',
+                payload: blog_posts
+                
+            }))
+            .catch(error => console.log(error) )
+    }
+  }
+
+```
+
+*React-redux implementation*
+
+ ```
+ import React from 'react'
+import {connect} from 'react-redux'
+import { addBlogpost } from '../actions/addBlogpost'
+
+class BlogpostInput extends React.Component {
+
+    state = {
+        title: '',
+        content: ''
+    }
+
+    handleChange = (event) => {
+        
+        this.setState({
+            [event.target.name]: event.target.value,
+        })
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.props.addBlogpost(this.state)
+        this.setState({
+            title: '',
+            content: ''
+        })
+    }
+
+    render() {
+        return (
+            <div>
+        <form onSubmit={this.handleSubmit}>
+          <label>BlogPost Title: </label>
+          <input type='text' placeholder='Title' value={this.state.title} name="title" onChange={this.handleChange}/><br/>
+          <br></br>
+                    <label>BlogPost Content:  </label>
+          <input type='text' placeholder='Content' value={this.state.content} name="content" onChange={this.handleChange}/><br/>
+          <br></br>
+                    <input type="submit" />
+        </form>
+            </div>
+            
+        )
+    }
+
+}
+
+export default connect(null,{addBlogpost})(BlogpostInput)
+```
+
+
 
 **Tech/Framework used**
 
@@ -92,15 +165,16 @@ npm start   => to start up this app, as this is the front-end section of this pr
 
 **yarn start**
 
-Runs the app in the development mode.<br />
+- Runs the app in the development mode.<br />
 
-Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
+- Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-The page will reload if you make edits.<br />
+- The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 
-Meta
+**Meta**
+
 Your Name – samuel.O -> samrey2018@gmail.com / https://github.com/epic448
 
 Distributed under the Samuel.O license. See LICENSE for more information.

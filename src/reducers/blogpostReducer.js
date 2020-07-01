@@ -1,10 +1,8 @@
 
 export default function blogpostReducer(state = { blog_posts: [] }, action) {
-        //  Change blog_posts to blogPosts
-//     Built Video 4
+     
     switch (action.type) {
         case 'FETCH_BLOGPOSTS':
-            // console.log(action.payload)
 
             return { blog_posts: action.payload }
         
