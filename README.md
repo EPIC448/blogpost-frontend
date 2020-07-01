@@ -2,13 +2,17 @@
 
 
 **Project Title**
+   BlogPost-Frontend
+
 
 **Motivation**
+   Honestly, The Science part of me fueled this project. As a natural born engineer, I wander what it would be like to add almost identical functionality of Twitter to a blog post, combined with the Upvote and Downvote function of Reddit or anyother apps out there.
 
-
-
-
-**ScreenShots**
+   ![](https://media.giphy.com/media/FlF0q8GnGI2cM/giphy.gif)
+   
+    Simply put, what app do I wish I had when I use web application such as reddit or twitter.
+    
+     *That answer birth this project.* 
 
 **Code_Sample**
 
@@ -60,19 +64,21 @@
 **Installation**
 Installation
    OSX & Linux.
-  In your Github reposiotry. 
-  Fork the project into your current repository 
-  Then clone is down into your local machine 
+ - In your Github reposiotry. 
+ - Fork the project into your      current repository.
+ -Then clone is down into your local machine 
 
     
-          *Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-backend   before running npm start for this project.*
+          *Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-backend   before running npm start for this project.
+          *
 
-    In your Shell or Local terminal, cd to the approprate file that you just cloned and run or type  
+  -In your Shell or Local terminal, cd to the approprate file that you just cloned and run or type  
        > Npm start.
 
      
-Usage Example
-   Instagram, Twitter, facebook. 
+*Usage Example*
+
+
     The project shows a list of comments and The user has the choice to vote on that comments, Edit the comment, or create a New comment.
 
      ADD SCRRENSHOT
