@@ -142,12 +142,16 @@ Installation
  -Then clone is down into your local machine 
 
     
-          *Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-backend   before running npm start for this project.
-          *
+          *Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-backend   before running npm start for this project. Else, you will have a webpage with no data in it. 
+          
 
   -In your Shell or Local terminal, cd to the approprate file that you just cloned and run or type  
        > Npm start.
 
+*Start up the app in your browser*
+
+npm start   => to start up this app, as this is the front-end section of this project.    
+        Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-backend   before running npm start for this project.
      
 *Usage Example*
 
@@ -157,9 +161,7 @@ Installation
      ADD SCRRENSHOT
   
 
-make install
-npm start   => to start up this app, as this is the front-end section of this project.    
-        Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-backend   before running npm start for this project.
+
 
 
 
@@ -169,9 +171,20 @@ npm start   => to start up this app, as this is the front-end section of this pr
 
 - Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-- The page will reload if you make edits.<br />
+- The page will reload  automatically if you make edit
 You will also see any lint errors in the console.
 
+**Commiting to Git hub**
+
+[ ]Open the terminal.
+
+[ ]Change the current working directory to your local repository.
+
+[ ]Commit the file that you've staged in your local repository.
+
+[ ] $ git commit -m "Add existing file" Push the changes in your local repository to GitHub.
+
+[ ]$ git push origin branch-name.
 
 **Meta**
 
