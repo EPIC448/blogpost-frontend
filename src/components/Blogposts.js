@@ -1,5 +1,6 @@
+// eslint-disable-next-line
 import React, { Fragment } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import RenderVote from './RenderVote'
 
 import {connect} from 'react-redux'

@@ -1,4 +1,4 @@
-
+// eslint-disable-next-line
 import React, { Fragment } from 'react'
 
 class Rendervote extends React.Component{

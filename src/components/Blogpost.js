@@ -4,7 +4,7 @@ import BlogpostEdit from './BlogpostEdit'
 
 const Blogpost = (props) => {
     
-    let blogpost = props.blogposts.filter(blogpost => blogpost.id == props.match.params.id)[0]
+    let blogpost = props.blogposts.filter(blogpost => blogpost.id === props.match.params.id)[0]
 
   
 return (
