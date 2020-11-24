@@ -22,32 +22,37 @@ class Rendervote extends React.Component{
       
     };
     
-    downVoteClicked = event => {
-      let newVote = this.state.vote - 1
+  downVoteClicked = event => {
+      
+    let newVote = this.state.vote - 1
+    
+    if (newVote > -1) {
       this.setState({
         
-          vote: newVote
-        })
+        vote: newVote
+      })
+    }
+  
       
       
     };
   
     
     render(){
-    return (
+        return (
+          
+          <div class="nested-links">
+
+
+                <button onClick={this.handleUpvoteClicked}> <span>Up👍🏿Vote</span></button>
+                 {this.state.vote}
       
-      <div class="nested-links">
-
-
-            <button onClick={this.handleUpvoteClicked}> <span>Up👍🏿Vote</span></button>
-          {this.state.vote}
-  
-          <button onClick={this.downVoteClicked}> <span> Down👎🏻vote</span></button>
-  
-    
-      </div>
-  
-    )
+                <button onClick={this.downVoteClicked}> <span> Down👎🏻vote</span></button>
+      
+        
+          </div>
+      
+        )
    }
   }
   

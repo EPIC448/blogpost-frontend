@@ -15,7 +15,7 @@ import App from './App';
 
 
 
-
+// Working with Redux
 const store = createStore(blogpostReducer, composeWithDevTools(applyMiddleware(thunk),
   // using the new version of redux
 ));

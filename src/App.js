@@ -19,11 +19,10 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <p>This is the App page</p>
+        <p>Welcome to BlogPost Main Page</p>
         {/* <BlogpostsContainer> */}
         {/* App... This is the App.js */}
 
-        
         <BlogpostsContainer />
         
         

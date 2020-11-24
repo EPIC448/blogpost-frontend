@@ -5,11 +5,11 @@ const NavBar = ( ) => {
     
     return (
         <div>
-            <Link to='/blog_posts' style={{ paddingRight: '10px' }}> Blogposts </Link>
+            <Link to='/blog_posts' style={{ paddingRight: '10px' }}> All Blogposts </Link>
             <br></br>
             <br></br>
 
-            <Link to='/blog_posts/new'> Add BlogPost</Link>
+            <Link to='/blog_posts/new'> Add New BlogPost</Link>
 
         </div>
     )
