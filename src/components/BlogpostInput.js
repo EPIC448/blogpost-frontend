@@ -28,15 +28,15 @@ class BlogpostInput extends React.Component {
     render() {
         return (
             <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>BlogPost Title: </label>
-          <input type='text' placeholder='Title' value={this.state.title} name="title" onChange={this.handleChange}/><br/>
-          <br></br>
-                    <label>BlogPost Content:  </label>
-          <input type='text' placeholder='Content' value={this.state.content} name="content" onChange={this.handleChange}/><br/>
-          <br></br>
-                    <input type="submit" />
-        </form>
+            <form onSubmit={this.handleSubmit}>
+                <label>BlogPost Title: </label>
+                <input type='text' placeholder='Title' value={this.state.title} name="title" onChange={this.handleChange}/><br/>
+                <br></br>
+                            <label>BlogPost Content:  </label>
+                <input type='text' placeholder='Content' value={this.state.content} name="content" onChange={this.handleChange}/><br/>
+                <br></br>
+                 <input type="submit" />
+            </form>
             </div>
             
         )

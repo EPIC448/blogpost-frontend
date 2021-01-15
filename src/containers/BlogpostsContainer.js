@@ -42,5 +42,5 @@ const mapStateToProps = state => {
         }
 }
 
-// mapStateToProps?: (state, ownProps?) => object
+      //                  (state, ownProps?) => object
 export default connect(mapStateToProps, {fetchBlogposts})(BlogpostsContainer)

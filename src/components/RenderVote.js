@@ -31,10 +31,8 @@ class Rendervote extends React.Component{
         
         vote: newVote
       })
-    }
+     }
   
-      
-      
     };
   
     
