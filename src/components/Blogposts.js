@@ -42,9 +42,5 @@ class Blogposts extends React.Component{
 
 export default connect(null, {})(Blogposts)
 
-//Take home to graduate.
-//  makingvoting Unique... .
-
-// send the code snippet to alice  
 
 

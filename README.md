@@ -146,7 +146,7 @@ Installation
           
 
   -In your Shell or Local terminal, cd to the approprate file that you just cloned and run or type  
-       > Npm start.
+       > npm start.
 
 *Start up the app in your browser*
 
