@@ -201,4 +201,10 @@ When to use redux Store
 
   Benefite of Local state.
    It is bound to the components it is in.
-=======
+<!-- ======= -->
+
+
+
+======== Use bootstrap for the Index page to make it look presentabele. 
+// Check out a branch 
+ boostrap documentations.  needed
