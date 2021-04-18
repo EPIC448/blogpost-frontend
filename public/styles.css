@@ -9,17 +9,18 @@ header {
 }
 
 header #video {
-  width: 50%;
+  width: 100%;
   
   
 }
 
-header .main_section {
+header .main_section{
   position: fixed;
   top: 0;
+  background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
 
 }
 
