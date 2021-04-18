@@ -8,6 +8,9 @@
   Link to instructions. 
    https://github.com/panr/hugo-theme-hello-friend/#hello-friend-theme-user
 
+------ Bootstrap resources used.----
+https://reactstrap.github.io/components/tooltips/
+
 ----- Run the website based on the instruction provide above.
 
 ---- if working then, Add it back into the Master---  
