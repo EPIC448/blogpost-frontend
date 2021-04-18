@@ -4,7 +4,7 @@ import React, { Fragment } from 'react'
 import RenderVote from './RenderVote'
 
 import {connect} from 'react-redux'
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav,  NavLink } from 'reactstrap';
 
 
 class Blogposts extends React.Component{
@@ -25,9 +25,9 @@ class Blogposts extends React.Component{
 
       {this.props.blogposts.map(blogpost =>
         <li key={blogpost.id}>
-
-          <NavLink to={`/blog_posts/${blogpost.id}`}>{blogpost.title} - {blogpost.content}</NavLink>
-
+         <Nav className="mr-auto" navbar>
+          <NavLink href={`/blog_posts/${blogpost.id}`}>{blogpost.title} - {blogpost.content}</NavLink>
+        </Nav>
           
             
         <RenderVote/>

@@ -1,5 +1,6 @@
 // eslint-disable-next-line
 import React, { Fragment } from 'react'
+import { Button } from 'reactstrap';
 
 class Rendervote extends React.Component{
     
@@ -42,10 +43,11 @@ class Rendervote extends React.Component{
           <div class="nested-links">
 
 
-                <button onClick={this.handleUpvoteClicked}> <span>Up👍🏿Vote</span></button>
+                <Button onClick={this.handleUpvoteClicked} outline color="success"> <span>Up👍🏿Vote</span> </Button>
+                
                  {this.state.vote}
       
-                <button onClick={this.downVoteClicked}> <span> Down👎🏻vote</span></button>
+                <Button onClick={this.downVoteClicked} outline color="warning" > <span> Down👎🏻vote</span> </Button>
       
         
           </div>

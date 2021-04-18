@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {editBlogpost} from '../actions/editBlogpost'
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 
 
@@ -38,24 +39,20 @@ class BlogpostEdit extends React.Component {
 
   render() {
     return (
-      <div>
+      <Form onSubmit={this.handleSubmit}>
+      <FormGroup>
+
+
+          <Label for="exampleText">Blog Title</Label>
+          <Input type='text' placeholder='Title' value={this.state.title} name="title" onChange={this.handleChange}/>                    
         
-        <form onSubmit={this.handlesubmit}>
-          <label>Edit BlogPost Title: </label>
+          <Label>BlogPost Content:  </Label>
+          <Input type='text' placeholder='Content' value={this.state.content} name="content" onChange={this.handleChange}/>                    
+             
+      </FormGroup>
+      <Button type="submit" > Submit </Button> 
 
-          <input type='text' placeholder='Title' value={this.state.title} name="title" onChange={this.handleChange}/><br/>
-          
-                <label>Edit BlogPost Content: </label>
-          <input type='text' placeholder='Content' value={this.state.content} name="content" onChange={this.handleChange}/><br/>
-          <input type="submit" />
-          
-          <br>
-          </br>
-
-        </form>
-
-       
-      </div>
+  </Form>
     )
   }
 }
