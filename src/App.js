@@ -3,6 +3,7 @@ import React from 'react';
 import {connect} from 'react-redux'
 import {fetchBlogposts} from './actions/fetchBlogposts'
 import BlogpostsContainer from './containers/BlogpostsContainer'
+import { Badge } from 'reactstrap';
 
 
 
@@ -18,8 +19,8 @@ class App extends React.Component {
 
     return (
       <div className="App">
-
-        <p>Snowed_IN</p>
+        <h1> <Badge color="light">Snowed_IN</Badge></h1>
+        
         <BlogpostsContainer />
       </div>
     )
