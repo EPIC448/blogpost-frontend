@@ -1,27 +1,25 @@
-Edit in JSFiddle
-Result
-HTML
-CSS
-JavaScript
-Resources
+
 header {
   position: fixed;
 }
 
-header #video {
-  width: 100%;
+ #myVideo {
   position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 
   
 }
 
-header .main_section{
+.main_section{
+  position: fixed;
   top: 0;
-  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 30px;
- z-index: 2;
+  padding: 20px;
 }
 
 
