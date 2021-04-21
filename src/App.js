@@ -3,7 +3,6 @@ import React from 'react';
 import {connect} from 'react-redux'
 import {fetchBlogposts} from './actions/fetchBlogposts'
 import BlogpostsContainer from './containers/BlogpostsContainer'
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -19,15 +18,10 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <p>Welcome to BlogPost Main Page</p>
-        {/* <BlogpostsContainer> */}
-        {/* App... This is the App.js */}
-
+        
         <BlogpostsContainer />
-        
-        
       </div>
-    );
+    )
     
   }
  

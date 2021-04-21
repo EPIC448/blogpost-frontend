@@ -38,9 +38,7 @@ class BlogpostsContainer extends React.Component {
 const mapStateToProps = state => {
         return {
                 blogposts: state.blog_posts
-                // change to camerl case.
         }
 }
 
-      //                  (state, ownProps?) => object
 export default connect(mapStateToProps, {fetchBlogposts})(BlogpostsContainer)

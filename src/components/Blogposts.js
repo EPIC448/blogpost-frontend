@@ -1,9 +1,10 @@
 // eslint-disable-next-line
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import RenderVote from './RenderVote'
 
 import {connect} from 'react-redux'
+import { Nav,  NavLink,Card,CardBody } from 'reactstrap';
 
 
 class Blogposts extends React.Component{
@@ -24,15 +25,17 @@ class Blogposts extends React.Component{
 
       {this.props.blogposts.map(blogpost =>
         <li key={blogpost.id}>
+        <Card>
+          <CardBody>
+            <Nav className="mr-auto" navbar>
+              <NavLink href={`/blog_posts/${blogpost.id}`}>{blogpost.title} - {blogpost.content}</NavLink>
+            </Nav>
+                  
+            <RenderVote/>
 
-          <Link to={`/blog_posts/${blogpost.id}`}>{blogpost.title} - {blogpost.content}</Link>
+            </CardBody>
+          </Card>
 
-          
-            
-        <RenderVote/>
-
-          
-          
         </li>)}
     </div>
 
