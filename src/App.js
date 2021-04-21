@@ -6,6 +6,7 @@ import BlogpostsContainer from './containers/BlogpostsContainer'
 
 
 
+
 class App extends React.Component {
   
   componentDidMount() {
@@ -17,11 +18,21 @@ class App extends React.Component {
   render() {
 
     return (
+
       <div className="App">
         
-        <BlogpostsContainer />
+        <video autoplay muted loop id="myVideo">
+         <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4"/>
+      </video>
+      
+      <div class="container_title">
+            <h1 class="display-3">Snowed_IN</h1>
+            <p class="lead mb-0"> All things Cold Weather</p>
       </div>
-    )
+        <BlogpostsContainer />
+
+      </div>
+    );
     
   }
  

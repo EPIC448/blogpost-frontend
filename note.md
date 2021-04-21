@@ -13,4 +13,5 @@ https://reactstrap.github.io/components/tooltips/
 
 ----- Run the website based on the instruction provide above.
 
----- if working then, Add it back into the Master---  
+---- update App.js with index.html content-- Resources below.-  
+https://www.freecodecamp.org/news/quick-guide-to-understanding-and-creating-reactjs-apps-8457ee8f7123/
