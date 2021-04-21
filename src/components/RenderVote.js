@@ -40,7 +40,7 @@ class Rendervote extends React.Component{
     render(){
         return (
           
-          <div class="nested-links">
+          <div class="vote_buttom">
 
 
                 <Button onClick={this.handleUpvoteClicked} outline color="success"> <span>Up👍🏿Vote</span> </Button>
