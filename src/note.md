@@ -208,3 +208,8 @@ When to use redux Store
 ======== Use bootstrap for the Index page to make it look presentabele. 
 // Check out a branch 
  boostrap documentations.  needed
+
+
+ ===== What is Breaking the app is that-----
+  The  "root" inside of index.HTML is what take over When you click Add new Blog post;
+   recommendation: See if you can get all your contents in index.html to be in  App.js and work from there. 
