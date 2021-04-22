@@ -10,11 +10,24 @@
   
     
   }
+
+ .app .content_container .logo-main {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+    
+  }
+  img { 
+    width: 20%;
+    height: auto;
+    opacity: 0.4;
+  }
   
   .content_container{
     position: fixed;
     top: 0;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
