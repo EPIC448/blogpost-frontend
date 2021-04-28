@@ -13,7 +13,11 @@
     Simply put, what app do I wish I had when I use web application such as reddit or twitter.
     
      *That answer birth this project.* 
-     
+
+**Video Demo**  
+     - [Link](https://youtu.be/XRY7T83MmZk)
+
+
 
 **Code_Sample**
 
