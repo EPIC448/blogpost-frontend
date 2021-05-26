@@ -31,3 +31,7 @@ https://www.freecodecamp.org/news/quick-guide-to-understanding-and-creating-reac
    Peer code reviews
 
    */
+
+   // when App does not work... Run this. 
+
+   https://stackoverflow.com/questions/47612580/react-scripts-command-not-found/49171609
